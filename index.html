@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="in" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>our cart</title>
+  
+</head>
+<body>
+  <a href="page2.html" aria-current="page">Other page</a>
+  <h1>cart</h1>
+
+  <h3>products</h3>
+  <div class="products">
+    <button onclick="addToCart({ id: 1, name: 'caffè', price: 1.5 }); render()">+ caffè (1.5€)</button>
+    <button onclick="addToCart({ id: 2, name: 'lattè', price: 2 }); render()">+ lattè (2€)</button>
+    <button onclick="addToCart({ id: 3, name: 'cornetto', price: 1.2 }); render()">+ cornetto (1.2€)</button>
+  </div>
+
+  <h3>السلة</h3>
+  <div id="cart"></div>
+  <div id="total"></div>
+
+  <button id="btn">click</button>
+  <p id="count">0</p>
+  
+  <script src="script.js"></script>
+</body>
+</html>
